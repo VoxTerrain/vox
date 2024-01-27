@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.game-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+}
+
+.game-details {
+    padding: 10px;
+}
+
+.price {
+    color: #00a0d2;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.demo-button, .download-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.demo-button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.download-button {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.demo-button:hover, .download-button:hover {
+    background-color: #45a049;
+    color: #fff;
+}
+
+.download-links {
+    display: none;
+}
+
+.invisible-link {
+    display: none;
+}
+
+.game-card:hover .download-links {
+    display: block;
+}
+
+.invisible-link {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.game-icon {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+}
