@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VoxLibrary</title>
+</head>
+<body>
+
+    <header>
+        <h1>VoxLibrary</h1>
+    </header>
+
+    <main>
+        <div class="game-card" onclick="location.href='#';">
+            <div class="game-details">
+                <h2>Geometry Dash (Original)</h2>
+                <p class="price">$0</p>
+                <div class="buttons">
+                    <button class="demo-button" onclick="playDemo('games/gdash.html');">Play Online (DEMO)</button>
+                    <button class="download-button" onclick="redirectToDownloadPage('download/gdash.html');">Download</button>
+                </div>
+                <div class="download-links">
+                    <a class="invisible-link" href="game1-windows.zip" download>Windows</a>
+                    <a class="invisible-link" href="game1-linux.tar.gz" download>Linux</a>
+                    <a class="invisible-link" href="game1-android.apk" download>Android</a>
+                </div>
+                <p class="info">Geometry Dash (Original)</p>
+            </div>
+        </div>
+
+        <!-- Repeat similar structure for other games -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vox</p>
+    </footer>
+
+    <script>
+        function playDemo(demoPath) {
+            window.location.href = demoPath;
+        }
+
+        function redirectToDownloadPage(gameName) {
+            window.location.href = 'download/gdash.html';
+        }
+    </script>
+
+</body>
+</html>
