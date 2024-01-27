@@ -1,0 +1,70 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('home2.png'); /* înlocuiește cu calea către imaginea ta de fundal */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  main {
+    text-align: center;
+  }
+  main {
+    background: var(--random-image) center/cover no-repeat;
+    padding: 20px;
+  }
+  .community-section {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .discord-widget {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* modificație pentru a centra widget-ul */
+  }
+  
+  footer {
+    background-color: #3498db;
+    color: #fffdfd;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+  }
+  

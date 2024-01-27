@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Vox</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Setup your acccount</h2>
+    <form id="register-form">
+      <label for="username">Username of your account:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password (at least 8 characters):</label>
+      <input type="password" id="password" name="password" minlength="8" required>
+      <button type="button" onclick="handleRegister()">Register</button>
+    </form>
+  </div>
+
+  <script src="register.js"></script>
+  <script>
+    // JavaScript pentru a genera o clasă aleatoare la încărcarea paginii
+    document.addEventListener('DOMContentLoaded', function () {
+      var randomImageClasses = [
+        'home.png',
+        'home2.png',
+        'home3.png',
+        // Adaugă aici mai multe clase aleatoare
+      ];
+
+      var randomIndex = Math.floor(Math.random() * randomImageClasses.length);
+
+      // Setează variabilele CSS în funcție de calea imaginii
+      document.documentElement.style.setProperty('--random-image', 'url(\'path/to/image' + (randomIndex + 1) + '.jpg\')');
+    });
+  </script>
+</body>
+</html>
