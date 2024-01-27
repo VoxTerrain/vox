@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="download-styles.css">
+    <title>VoxLibrary</title>
+</head>
+<body>
+
+    <header>
+        <h1>Geometry Dash</h1>
+    </header>
+
+    <main>
+        <div class="download-container">
+            <h2>Geometry Dash</h2>
+            <p>Select your platform to download:</p>
+            <div class="download-options">
+                <a href="#" class="download-option" id="windows">Windows</a>
+                <a href="#" class="download-option" id="linux">Linux</a>
+                <a href="#" class="download-option" id="android">Android</a>
+                <a href="#" class="download-option" id="macos">MacOS (Experimental ⚠)</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VoxLibrary</p>
+    </footer>
+
+    <script>
+        document.getElementById('windows').addEventListener('click', function () {
+            window.location.href = 'gdash/GDash.zip';
+        });
+
+        document.getElementById('linux').addEventListener('click', function () {
+            window.location.href = 'gdash/GDash_linux.zip';
+        });
+
+        document.getElementById('android').addEventListener('click', function () {
+            window.location.href = 'gdash/GDash.apk';
+        });
+        document.getElementById('macos').addEventListener('click', function () {
+            window.location.href = 'gdash/GDash_mac.zip';
+        });
+    </script>
+
+</body>
+</html>
